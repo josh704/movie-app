@@ -17,17 +17,16 @@ function MovieList({ movies, setMovies }) {
   return (
     <div>
       <h2>Movie List</h2>
-      <div className="movie-list">
-        {movies.map(movie => (
+      <div className="movie-list">{movies.map(movie => (
           <div key={movie.id} className="movie-card">
             <img className="movie-image" src={movie.image} alt={movie.title} />
             <div className="movie-details">
               <h3>
                 <Link to={`/movie/${movie.id}`} className="movie-title">{movie.title}</Link>
               </h3>
+              <button onClick={() => handleDelete(movie.id)}>Delete</button>
               <p><strong>Genre:</strong> {movie.genre || 'N/A'}</p>
               <p><strong>Director:</strong> {movie.director || 'N/A'}</p>
-              <button onClick={() => handleDelete(movie.id)}>Delete</button>
             </div>
           </div>
         ))}

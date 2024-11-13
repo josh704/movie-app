@@ -23,8 +23,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route 
-            path="/" element={<MovieList movies={movies} setMovies={setMovies} />} />
+          <Route path="/" element={<MovieList movies={movies} setMovies={setMovies} />} />
           <Route path="/add" element={<MovieForm addMovie={addMovie} />} />
           <Route path="/movie/:id" element={<MovieDetail movies={movies} />} />
         </Routes>
