@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router,Route, Routes } from 'react-router-dom'; // Updated import for Routes
+import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import MovieList from './MovieList';
 import MovieForm from './MovieForm';
