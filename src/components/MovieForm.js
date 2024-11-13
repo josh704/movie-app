@@ -8,12 +8,12 @@ function MovieForm({ addMovie }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const newMovie = { title, image, genre };
+    const newMovie = { title, image, genre, director };
 
     fetch('http://localhost:3001/movies', {
       method: "POST",
       headers: {
-        "Content-Type": "Application/JSON", 
+        "Content-Type": "application/json", 
       },
       body: JSON.stringify(newMovie)
     })
@@ -23,6 +23,7 @@ function MovieForm({ addMovie }) {
         setTitle('');
         setImage('');
         setGenre('');
+        setDirector('');
       });
   };
 
