@@ -32,7 +32,6 @@
   margin-top: 10px;     
 }
 
-/* Add Movie Form Styling */
 form {
   max-width: 500px;
   margin: 30px auto;
@@ -161,6 +160,16 @@ h2 {
   text-transform: uppercase;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.edit-button {
+  background-color: #4CAF50; 
+  color: white;          
+  border: none;            
+  padding: 10px 20px;       
+  font-size: 16px;     
+  cursor: pointer;            
+  border-radius: 5px;   
+  transition: background-color 0.3s, transform 0.2s; 
 }
 
 
