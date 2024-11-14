@@ -4,7 +4,7 @@ import './App.css';
 
 function MovieList({ movies, setMovies }) {
     const handleDelete = (id) => {
-        fetch(`http://localhost:3001/movies/${id.toString()}`, {
+        fetch(`http://localhost:3001/movies/${id}`, {
           method: 'DELETE',
         })
           .then((res) => {
@@ -24,9 +24,9 @@ function MovieList({ movies, setMovies }) {
               <h3>
                 <Link to={`/movie/${movie.id}`} className="movie-title">{movie.title}</Link>
               </h3>
-              <button onClick={() => handleDelete(movie.id)}>Delete</button>
               <p><strong>Genre:</strong> {movie.genre || 'N/A'}</p>
               <p><strong>Director:</strong> {movie.director || 'N/A'}</p>
+              <button className='delete-button' onClick={() => handleDelete(movie.id)}>Delete</button>
             </div>
           </div>
         ))}
