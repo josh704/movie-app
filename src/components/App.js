@@ -9,7 +9,7 @@ function App() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/movies')
+    fetch('https://json-server-backend-lln6.onrender.com/movies')
       .then(res => res.json())
       .then(data => setMovies(data));
   }, []);

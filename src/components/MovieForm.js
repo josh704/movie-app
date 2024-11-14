@@ -18,7 +18,7 @@ function MovieForm({ addMovie }) {
 
     const newMovie = { title, image, genre, director };
 
-    fetch('http://localhost:3001/movies', {
+    fetch('https://json-server-backend-lln6.onrender.com/movies', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

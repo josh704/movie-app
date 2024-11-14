@@ -13,7 +13,7 @@ function MovieList({ movies, setMovies }) {
     director: ''
   });
   const handleDelete = (id) => {
-    fetch(`http://localhost:3001/movies/${id}`, {
+    fetch(`https://json-server-backend-lln6.onrender.com/movies/${id}`, {
       method: 'DELETE',
     })
       .then((res) => {
@@ -33,7 +33,7 @@ function MovieList({ movies, setMovies }) {
   };
   const handleSubmitEdit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3001/movies/${updatedMovie.id}`, {
+    fetch(`https://json-server-backend-lln6.onrender.com/movies/${updatedMovie.id}`, {
       method: 'PATCH', 
       headers: {
         'Content-Type': 'application/json',
