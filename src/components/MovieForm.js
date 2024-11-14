@@ -39,8 +39,8 @@ function MovieForm({ addMovie }) {
         setDirector('');
         setError('');
       })
-      .catch((err) => {
-        console.error('Error adding movie:', err);
+      .catch((error) => {
+        console.error('Error adding movie:', error);
         setError('An error occurred while adding the movie. Please try again.');
       });
   };
