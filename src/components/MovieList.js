@@ -71,8 +71,7 @@ function MovieList({ movies, setMovies }) {
               <p><strong>Genre:</strong> {movie.genre || 'N/A'}</p>
               <p><strong>Director:</strong> {movie.director || 'N/A'}</p>
 
-              <button
-                className="edit-button" onClick={() => handleEditClick(movie)} >Edit </button>
+              <button className="edit-button" onClick={() => handleEditClick(movie)} >Edit </button>
               <button className="delete-button" onClick={() => handleDelete(movie.id)}>Delete</button>
             </div>
           </div>
